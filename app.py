@@ -8,7 +8,7 @@ import time
 # ==============================
 # CONFIG
 # ==============================
-API_URL = "http://127.0.0.1:8000/ask"
+API_URL = "https://rag-chatbot-5-2mtk.onrender.com/ask"
 st.set_page_config(page_title="AI Assistant", page_icon="🤖", layout="wide")
 
 # ==============================
