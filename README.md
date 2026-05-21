@@ -80,7 +80,7 @@ Health check — returns server status.
 📊 Evaluation Metrics
 Run the retriever evaluator:
 bashpython retriever_evaluator.py
-MetricScorePrecision@k0.33Recall@k0.33MRR0.67Domain Classification Accuracy95%+
+MetricScore Precision@k 0.33 Recall@k 0.33 MRR 0.67 Domain Classification Accuracy 95%+
 
 🧪 Testing
 The system was tested across five levels:
