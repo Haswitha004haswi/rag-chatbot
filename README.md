@@ -60,35 +60,6 @@ domain-aware-medical-chatbot/
 ⚙️ Tech Stack
 LayerTechnologyLanguagePython 3.8+BackendFastAPI + UvicornFrontendStreamlitEmbeddingsSentence Transformers (all-MiniLM-L6-v2)Vector DBPineconeRerankerCrossEncoder (ms-marco-MiniLM-L-6-v2)LLMOpenRouter / GPT-3.5-turboWeb SearchTavily APIValidationPydanticDeploymentRender + Streamlit Cloud
 
-🔧 Setup and Installation
-1. Clone the repository
-bashgit clone https://github.com/your-username/domain-aware-medical-chatbot.git
-cd domain-aware-medical-chatbot
-2. Create and activate a virtual environment
-bashpython -m venv venv
-source venv/bin/activate        # Linux/Mac
-venv\Scripts\activate           # Windows
-3. Install dependencies
-bashpip install -r requirements.txt
-4. Configure environment variables
-Create a .env file in the root directory:
-envOPENAI_API_KEY=your_openrouter_api_key
-PINECONE_API_KEY=your_pinecone_api_key
-TAVILY_API_KEY=your_tavily_api_key
-5. Upload PDFs to Pinecone
-Place your medical PDFs in:
-
-data/education_pdfs/ — for medical education content
-data/healthcare_pdfs/ — for healthcare content
-
-Then run:
-bashpython pdf_loader.py
-6. Start the FastAPI backend
-bashuvicorn main:app --host 127.0.0.1 --port 8000 --reload
-API docs available at: http://127.0.0.1:8000/docs
-7. Launch the Streamlit frontend
-bashstreamlit run streamlit_app.py
-
 📡 API Reference
 POST /ask
 Submit a medical query.
